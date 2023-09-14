@@ -1,0 +1,40 @@
+    body {
+            background: linear-gradient(to bottom, #ffffff, #f2f2f2);
+        }
+
+        header {
+            background: linear-gradient(to bottom, #3dff33, #737a81);
+            padding: 20px;
+        }
+
+        .wrapper {
+            margin: 0 auto;
+            width: 80%;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        h1, h2, h3, h4, h5 {
+            border-bottom: 10px dashed #333;
+            color: #333;
+        }
+
+        p {
+            width: 70%;
+            margin: 0 auto;
+        }

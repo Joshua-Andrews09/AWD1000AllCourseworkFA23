@@ -1,0 +1,27 @@
+footer{
+    background-color: lightblue;
+    font-family: Arial, Helvetica, sans-serif;
+    color:darkblue ;
+    padding: 10px;
+    border: 1px dashed darkblue;
+    text-align: center;
+
+}
+h1.headline{
+    color: navy;
+    border-bottom: 2px dotted grey;
+    display: inline-block;
+}
+
+#feature{
+    font-size: small;
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    width: 80%;
+    box-shadow:2px 2px 4px rgba(0,0,0,0.5) ;}
+
+    #notice{
+        text-align: center;
+      border-style:solid;
+    }

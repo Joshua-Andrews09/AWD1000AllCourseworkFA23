@@ -1,0 +1,29 @@
+h1{
+    text-align: center;
+}
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('products.jpg'); /* Replace 'left_background.jpg' with your background image URL */
+    background-repeat: repeat-y;
+    background-size: auto 100%; /* This will make the image cover the full height of the browser window and repeat vertically */
+    font-family: Arial, sans-serif;
+}
+
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent white background to make the content readable */
+}
+
+h1 {
+    color: #333;
+}
+
+p {
+    color: #555;
+}

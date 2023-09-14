@@ -1,0 +1,78 @@
+header{
+    background-color: lightblue;
+}
+
+a:link{
+    color: black;
+}
+
+a:visited{
+    color: black;
+}
+
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+.jumbotron {
+    background-image:url("../Hjumbo_bg.jpg") ; 
+    text-align: center; 
+    padding: 100px 0; 
+}
+
+.jumbotron h1 {
+    font-size: 36px;
+    color: white; 
+}
+.jumbotron a{
+    color: white;
+}
+
+.jumbotron p {
+    font-size: 18px;
+    color:white; 
+}
+
+#one{
+    background-color: lightgreen;
+}
+
+#onetwo{
+    background-color: lightgreen;
+}
+
+#two{
+    background-color: lightpink;
+}
+#twotwo{
+    background-color: lightpink;
+}
+
+#three{
+    background-color:lightblue;
+}
+#threetwo{
+    background-color: lightblue;
+}
+#four{
+    background-color: lightsalmon;
+}
+#fourtwo{
+    background-color: lightsalmon;
+}
+
+#five{
+    background-color: lightyellow;
+}
+#fivetwo{
+    background-color: lightyellow;
+}
+body{
+    background-color: lightgray;
+}
+footer{
+    text-align: center;
+    background-color: black;
+    color: white;
+}
