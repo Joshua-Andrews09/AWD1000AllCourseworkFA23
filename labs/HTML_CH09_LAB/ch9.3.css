@@ -1,0 +1,79 @@
+
+
+/*body*/
+body{
+    background-color: lightcoral;
+    width: 1200px;
+}
+
+
+
+/*header*/
+header{
+    background-color: lightgrey;
+    width: 1200px;
+    margin:5px;
+}
+
+h1{
+text-align: center;
+
+
+}
+#undernote{
+    text-align: center;
+    
+}
+
+.head{
+display: flex;
+justify-content: space-between;
+}
+
+#navbar{
+    width: 1200px;
+    font-size: 8px;
+    display: flex;
+    justify-content: space-around;
+   
+}
+/*header*/
+/*main*/ 
+main{
+    width: 1200px;
+    margin:5px;
+}
+.main-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+
+.left-column {
+    flex: 30%;
+    background-color: #f0f0f0; 
+    padding: 20px;
+}
+
+/* Define the right column with 70% width */
+.right-column {
+    flex: 70%;
+    background-color: #e0e0e0; /* Optional background color for clarity */
+    padding: 20px;
+    
+}
+h3{
+     text-align:left;
+}
+
+
+
+
+/*footer*/
+footer{
+  width:1200px;
+  margin:5px;
+  text-align: center;
+  background-color: darkgrey;
+}

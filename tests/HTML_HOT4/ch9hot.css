@@ -1,0 +1,248 @@
+body{
+    background-color: lightgray;
+}
+
+/*header*/ 
+
+
+header{
+    text-align: center;
+    background-color: lightgrey;
+}
+h1{
+    text-align: center;
+}
+ #logo{
+    height: 100px;
+    width: 100px;
+ }
+
+ ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    background-color: lightblue;
+ }
+ /*section*/
+section{
+    background-color: lightblue;
+    text-align: center;
+}
+ .button{
+    height: 50px;
+    width: 100px;
+    color: red;
+ }
+ .clearence{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap:20px;
+ }
+
+ #cleats{
+    height: 250px;
+    width: 250px;
+ }
+
+ /*main*/
+main{
+    background-color: lightblue;
+}
+ #main-header{
+text-align: center;
+ }
+
+ .top-content{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    gap: 300px;
+ }
+
+ #main-cleats{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+ }
+ 
+ #rounded-cleats{
+    border-radius: 50%;
+    align-content: center;
+ }
+
+ #gloves{
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+ }
+
+ #rounded-gloves{
+    border-radius: 50%;
+    align-content: center;
+ }
+
+ #guards{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+ }
+
+ #rounded-guards{
+    border-radius: 50%;
+    align-content: center;
+ }
+ .bottom-content{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+   
+ }
+
+ #ball-1{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+ }
+
+ #ball-2{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+ }
+ #ball-3{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+ }
+ 
+ #ball-4{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+ }
+ #bottom-header{
+    text-align: center;
+ }
+ /*footer*/ 
+ footer{
+    text-align: center;
+    background-color: lightgrey;
+ }
+
+ /* Reset some default styles */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply a basic mobile-first layout */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Define your mobile-first styles */
+.feature-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.feature-image {
+    order: 1; /* Display first on mobile */
+}
+
+.feature-text {
+    order: 2; /* Display second on mobile */
+}
+
+.buy-now-button {
+    order: 3; /* Display third on mobile */
+}
+
+/* Media query for tablet portrait (600px) */
+@media screen and (min-width: 600px) {
+    .feature-section {
+        flex-direction: row;
+    }
+
+    .feature-image {
+        order: 2; /* Display second on tablet */
+        flex: 1;
+    }
+
+    .feature-text {
+        order: 1; /* Display first on tablet */
+        flex: 1;
+    }
+
+    .buy-now-button {
+        order: 3; /* Display third on tablet */
+        flex: 0;
+    }
+}
+
+/* Media query for desktop (1200px) */
+@media screen and (min-width: 1200px) {
+    .feature-image {
+        order: 1; /* Display first on desktop */
+        flex: 0;
+    }
+
+    .feature-text {
+        order: 2; /* Display second on desktop */
+        flex: 0;
+    }
+
+    .buy-now-button {
+        order: 3; /* Display third on desktop */
+        flex: 0;
+    }
+}
+
+/* Navbar styles */
+nav {
+    /* Define your navbar styles here */
+}
+
+/* Vertical navbar on mobile */
+@media screen and (max-width: 599px) {
+    nav {
+        flex-direction: column;
+    }
+}
+
+/* Horizontal navbar on desktop */
+@media screen and (min-width: 1200px) {
+    nav {
+        flex-direction: row;
+    }
+}
+
+/* Flexbox layout for content sections */
+.content-section {
+    /* Define your content section styles here */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Desktop (3 divs in a row) */
+@media screen and (min-width: 1200px) {
+    .content-section {
+        flex-direction: row;
+    }
+}
+
+/* Tablet (2x2 divs) */
+@media screen and (min-width: 600px) and (max-width: 1199px) {
+    .content-section {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .content-section > div {
+        flex: 1;
+        width: 50%;
+    }
+}
+

@@ -1,0 +1,51 @@
+/*body*/
+body{
+    background-color: #D2B48C;
+}
+/*header content */
+
+
+header{
+    text-align: center;
+    background-color:rgb(220,220,220)
+}
+h1{
+    font-size: 300%;
+    text-shadow: 2px 2px lightgreen;
+}
+h2{
+    font-size: 150%;
+    text-shadow: 2px 2px lightgreen;
+}
+/*main part of content*/
+main{
+    background-color: rgba(0,145 ,0, 0.2);
+}
+p{
+    margin-left: 10px;
+}
+.history{
+ 
+        font: italic small-caps bold 16px/1.5 "Helvetica Neue", sans-serif
+    
+}
+#golf-course{
+    margin-left: 10px;
+    height: 300px;
+    width: 300px;
+}
+
+#main-content h3{
+    color: white;
+}
+
+#main-content > p{
+    color: brown;
+    text-shadow: 0.5px 0.5px black;
+    
+}
+
+ul, ol {
+    color: skyblue;
+    text-shadow: 1px 1px navy;
+}

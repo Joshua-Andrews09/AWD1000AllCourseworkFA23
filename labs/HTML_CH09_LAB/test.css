@@ -1,0 +1,50 @@
+/* Base styles for mobile */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Media query for tablet portrait (600px) */
+@media (min-width: 600px) {
+    header {
+        flex-direction: row;
+    }
+    nav {
+        flex-direction: row;
+    }
+    aside {
+        order: -1;
+    }
+    main {
+        flex-direction: row;
+    }
+}
+
+/* Media query for tablet landscape (900px) */
+@media (min-width: 900px) {
+    /* Add styles for tablet landscape layout here */
+}
+
+/* Media query for desktop (1200px) */
+@media (min-width: 1200px) {
+    /* Add styles for desktop layout here */
+}
+
+/* Media query for big desktop (2500px) */
+@media (min-width: 2500px) {
+    /* Add styles for big desktop layout here */
+}
+
+
+
