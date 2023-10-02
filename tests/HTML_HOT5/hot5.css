@@ -1,0 +1,18 @@
+body{
+    background-image: url(bacground.avif);
+}
+/*HEADER*/ 
+h1{
+    color:white;
+    text-shadow: 2px 2px navy;
+    text-align: center;}
+  
+  /*HEADER*/
+h3{
+    color: white;
+    text-shadow: 2px 2px navy;
+}
+p{
+    color: white;
+    text-shadow: 1px 1px navy;
+}
