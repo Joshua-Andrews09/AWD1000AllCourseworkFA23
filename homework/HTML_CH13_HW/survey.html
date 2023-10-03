@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="survey.css">
+    <title>Music Survey</title>
+</head>
+<body>
+    <header>
+        <h1>Music Survey</h1>
+    </header>
+    <main>
+      
+        <label for="name">Name:</label><br>
+<input type="text" name="name" id="name"><br>
+<label for="email">E-mail:</label><br>
+<input type="email" name="email" id="email"><br>
+
+<fieldset>
+    <legend>What is your Favorite Music genre?</legend>
+<input type="radio" name="country" id="country">
+<label for="country">Country</label><br>
+<input type="radio" name="pop" id="pop">
+<label for="pop">Pop</label><br>
+<input type="radio" name="rap" id="rap">
+<label for="rap">Rap</label>
+</fieldset>
+
+<fieldset>
+    <legend>How of do you buy music?</legend>
+<input type="checkbox" name="never" id="never">
+<label for="never">Never</label><br>
+<input type="checkbox" name="frequently" id="frequently">
+<label for="frequently">Frequent</label><br>
+<input type="checkbox" name="less-frequent" id="less-frequent">
+<label for="less-frequent">Less Frequent </label><br>
+</fieldset>
+
+<h4>Where Do You Listen To Music?</h4>
+<select id="music" size="3" multiple>
+<option value="car">Car Rides</option>
+<option value="work">At Work</option>
+<option value="school">School</option>
+<option value="games">Before Games</option>
+</select>
+      
+<h4>What Role Does Music Play in Your Life?</h4>
+<textarea id="comments"
+placeholder="comment here.">
+</textarea><br>
+<input type="button" value="submit">
+<input type="button" value="reset">
+    </main>
+    <footer>
+<h5>Joshua Andrews</h5>
+<h5>Joshua_Andrews@insideranken.com</h5>
+    </footer>
+</body>
+</html>
