@@ -1,0 +1,83 @@
+
+header{
+    text-align: center;
+    background-color: darkgrey;
+    padding-bottom: 20px;
+}
+label{
+    float: left;
+    width: 5em;
+    text-align: right;
+}
+input{
+    margin-left: 1em;
+    margin-bottom: .5em;
+
+}
+select{
+    margin-left: 1em;
+    margin-top: .5em;
+}
+
+#login{
+   
+    border-style:solid;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 5px;
+    border-color: navy;
+    background-color: lightgray;
+}
+
+#card{
+    border-style:solid;
+    margin-top: 5px;
+    margin-bottom: 5px;
+   margin-left: 20px;
+   margin-right: 20px;
+    padding: 5px;
+    border-color: navy;
+    background-color: lightgray;
+}
+
+#s-address{
+    border-style:solid;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 5px;
+    border-color: navy;
+    background-color: lightgray;
+}
+
+#b-address{
+    border-style:solid;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 5px;
+    border-color: navy;
+    background-color: lightgrey;
+}
+
+#button{
+text-align: center;
+}
+
+footer{
+    background-color: darkgrey;
+    text-align: center;
+}
+body{
+    background-color:lightskyblue;
+}
+
+.form-control{
+
+width: 30%;
+}
+
