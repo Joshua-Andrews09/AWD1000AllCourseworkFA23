@@ -1,0 +1,16 @@
+h1{
+    text-align: center;
+}
+header{
+    background-color: lightgrey;
+}
+.mb-3{
+    text-align: center;
+   margin: auto;
+    width: 40%;
+}
+
+footer{
+  text-align: center;
+    background-color: lightgray;
+}

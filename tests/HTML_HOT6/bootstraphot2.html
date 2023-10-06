@@ -1,0 +1,174 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstraphot2.css">
+    <title>Favorite foods</title>
+</head>
+<body>
+    <header><h1>Favorite Foods</h1></header>
+    <div class="container">
+        <div class="col-sm">
+          <div class="row">
+            <div class="accordion col-12 col-md-2" style="width:20%;" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                     pizza
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>pizza is my go to food.</strong> Pizza is semi-fast and easily a fan favoirte anywhere.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                     Tacos 
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>Tacos can be made with almost anything</strong> Tacos can be made with fish, chicken, beef. add a little lettuce and cheese. very fast and it is rare to find someone who does not love tacos. 
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Chicken
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>Steak is my last food.</strong> steak can be eateen on its own or with sides. The steak has to be cooked to medium rare no matter what. who ever decided to cook a steak well-done is insane.
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="col-12 col-md-2">
+            <ul>
+                <li>Pizza  <span class="badge bg-warning">pizza</span></li> 
+                <li>Tacos  <span class="badge bg-warning">tacos</span></li> 
+                <li>Steak  <span class="badge bg-warning">steak</span</li> 
+                </ul>
+          </div>
+          <div class="col-12 col-md-2">
+            <img src="pizza.jpg" class="img-fluid" alt="pizza">
+          </div>
+          <div class="col-sm">
+            <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      Favorite Foods
+      </button>
+      
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Favorite foods</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-dark">
+                <strong>Pizza</strong> is semi-fast and easily a fan favoirte anywhere.<br><br>
+                <strong>Tacos</strong> can be made with fish, chicken, beef. add a little lettuce and cheese. very fast and it is rare to find someone who does not love tacos.<br><br>
+                <strong>Steak</strong> can be eateen on its own or with sides. The steak has to be cooked to medium rare no matter what. who ever decided to cook a steak well-done is insane.
+            </div>
+            </div>
+            
+          </div>
+        </div>
+          </div>
+          <div class="col-12 col-md-2">
+            <div class> <p>Pizza Tacos and steak being are my <span style="font-weight: bold; font-size: 1.2em;">Favorite</span> foods. Some people might agree and some not. but in my eyes 
+                everyone needs try these foods. </p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div id="carouselExampleIndicators" style="height: 600px;; width: 800px; margin: auto; " class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="pizza.jpg" class="d-block w-100" alt="pizza">
+          </div>
+          <div class="carousel-item">
+            <img src="tacos.jpg" class="d-block w-100" alt="tacos">
+          </div>
+          <div class="carousel-item">
+            <img src="steak.jpg" class="d-block w-100" alt="steak">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+    
+
+      <div class="card bg-dark text-white" style="height: 300px; width: 300px;">
+        <img src="pizza.jpg" class="card-img" alt="piza">
+        <div class="card-img-overlay">
+          <h5 class="card-title"style="color: white; text-shadow: 2px 2px darkblue;">pizza</h5>
+          <p class="card-text" style="color: white; text-shadow: 2px 2px darkblue;" >Best easy food to order for family or even a party</p>
+       
+        </div>
+      </div>
+
+      <div class="card bg-dark text-white" style="height: 300px; width: 300px;">
+        <img src="tacos.jpg" class="card-img" alt="tacos">
+        <div class="card-img-overlay">
+          <h5 class="card-title" style="color:white; text-shadow: 2px 2px darkblue;">Tacos</h5>
+          <p class="card-text" style="color: white; text-shadow: 2px 2px darkblue;">The secoond best hand food, making tacos does not take long to cook. just the meat you are adding then add your toppings.</p>
+        
+        </div>
+      </div>
+
+      <div class="card bg-dark text-white" style="height: 300px; width: 300px;">
+        <img src="steak.jpg" class="card-img" alt="steak">
+        <div class="card-img-overlay">
+          <h5 class="card-title" style="color: white; text-shadow: 2px 2px darkblue;">steak</h5>
+          <p class="card-text"style="color: white; text-shadow: 2px 2px darkblue;" >Takes the longest out of the list to cook, but there is nothing else like it once you are done. easiest the best tasting food by itself</p>
+        
+        </div>
+      </div>
+
+
+      <div class="container-2">
+        <div class="row">
+          <div class="row"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-1-circle-fill" viewBox="0 0 16 16">
+            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM9.283 4.002H7.971L6.072 5.385v1.271l1.834-1.318h.065V12h1.312V4.002Z"/>
+          </svg></div>
+          <div class="col"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-2-circle-fill" viewBox="0 0 16 16">
+            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM6.646 6.24c0-.691.493-1.306 1.336-1.306.756 0 1.313.492 1.313 1.236 0 .697-.469 1.23-.902 1.705l-2.971 3.293V12h5.344v-1.107H7.268v-.077l1.974-2.22.096-.107c.688-.763 1.287-1.428 1.287-2.43 0-1.266-1.031-2.215-2.613-2.215-1.758 0-2.637 1.19-2.637 2.402v.065h1.271v-.07Z"/>
+          </svg></div>
+          <div class="row"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-3-circle" viewBox="0 0 16 16">
+            <path d="M7.918 8.414h-.879V7.342h.838c.78 0 1.348-.522 1.342-1.237 0-.709-.563-1.195-1.348-1.195-.79 0-1.312.498-1.348 1.055H5.275c.036-1.137.95-2.115 2.625-2.121 1.594-.012 2.608.885 2.637 2.062.023 1.137-.885 1.776-1.482 1.875v.07c.703.07 1.71.64 1.734 1.917.024 1.459-1.277 2.396-2.93 2.396-1.705 0-2.707-.967-2.754-2.144H6.33c.059.597.68 1.06 1.541 1.066.973.006 1.6-.563 1.588-1.354-.006-.779-.621-1.318-1.541-1.318Z"/>
+            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8Z"/>
+          </svg></div>
+          <div class="col"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-4-circle" viewBox="0 0 16 16">
+            <path d="M7.519 5.057c.22-.352.439-.703.657-1.055h1.933v5.332h1.008v1.107H10.11V12H8.85v-1.559H4.978V9.322c.77-1.427 1.656-2.847 2.542-4.265ZM6.225 9.281v.053H8.85V5.063h-.065c-.867 1.33-1.787 2.806-2.56 4.218Z"/>
+            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8Z"/>
+          </svg></div>
+        </div>
+      </div>
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</html>

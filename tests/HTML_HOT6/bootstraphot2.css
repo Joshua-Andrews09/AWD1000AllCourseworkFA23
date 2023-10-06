@@ -1,0 +1,27 @@
+.container{
+    align-content: center;
+    border: 5px;
+    border-style: solid;
+    border-color: navy;
+    padding: 10px;
+ 
+}
+
+header{
+    text-align: center;
+}
+
+#carousel-inner{
+    margin: auto;
+}
+
+.container-2{
+    align-content: center;
+    border: 5px;
+    border-style: solid;
+    border-color:lightblue;
+    padding: 10px;
+    margin-right:  30%;
+    margin-left: 30%;
+ 
+}
