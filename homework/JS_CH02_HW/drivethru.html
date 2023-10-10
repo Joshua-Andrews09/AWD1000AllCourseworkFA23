@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="drivethru.css">
+    <title>Drive Thru</title>
+</head>
+<body>
+    <header>
+<h1>Mcdonald's Drive Thru</h1>
+    </header>
+    <main>
+       <form>
+<label for="burger"><b>Burger: $1</b></label><br><input type="text" class="burger" id="burger" placeholder="Number of Burgers"><br>
+<label for="fries">Fry: $2</label><br><input type="text" class="fries" id="fries" placeholder="Number of Fries"><br>
+<label for="Soda">Soda: $2.50</label><br><input type="text" class="soda" id="soda" placeholder="Number of Sodas"><br><br>
+<button type="button" id="submit_button" class="submit">Submit Order</button>
+       </form>
+       <output id="total"> </output>
+<script>
+
+const burgerPrice = 1;
+const fryPrice = 2;
+const sodaPrice = 2.50;
+
+let burgerTotal = 0;''
+let fryTotal = 0; 
+let sodaTotal =0;
+
+
+document.getElementById('submit_button').onclick = () => {
+
+    let userburger = document.getElementById('burger').value;
+    burgerTotal = burgerPrice * userburger;
+
+    let userfry = document.getElementById('fries').value;
+    fryTotal = fryPrice * userfry;
+
+    let usersoda = document.getElementById('soda').value;
+    sodaTotal = sodaPrice * usersoda;
+
+    let grandTotal = burgerTotal + fryTotal + sodaTotal;
+
+    document.getElementById("total").innerHTML = `<h3>Total Price =  $${grandTotal.toFixed(2)}</h3>`;
+
+
+
+
+};
+
+
+
+
+</script>
+    </main>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</html>
