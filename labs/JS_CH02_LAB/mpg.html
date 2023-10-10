@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ch2.1lab.html">
+    <title>Chapter 2 lab 1</title>
+</head>
+<body>
+    <header>
+<h1>MPG Calculator</h1>
+    </header>
+    <main>
+<h2>The Miles Per Gallon Calculator</h2>
+<script>
+    const miles = parseInt (prompt("enter miles driven"));
+    const gallons = parseInt (prompt("Enter gallons of gas used"));
+    const mpg = parseFloat (miles/gallons);
+
+ const html = `<p><label>miles: </label>${miles}</p>
+              <p><label>Gallons:</label>${gallons}</p>
+              <p><label>MPG:</label>${mpg.toFixed(2)}</p>`;
+              document.write(html);
+
+
+</script>
+
+    </main>
+</body>
+</html>
