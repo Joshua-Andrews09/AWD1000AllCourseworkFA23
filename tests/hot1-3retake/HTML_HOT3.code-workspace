@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../HTML_HOT3"
+		},
+		{
+			"path": "../../../../hot1-3retake"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "hot1-3retake"
+	}
+}

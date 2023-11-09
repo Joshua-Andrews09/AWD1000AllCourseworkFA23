@@ -44,6 +44,8 @@ document.getElementById('submit_button').onclick = () => {
 
     let grandTotal = burgerTotal + fryTotal + sodaTotal;
 
+    document.getElementById("total").style= "border: 5px; border-style: solid;  border-color: red;  padding: 2px;";
+
     document.getElementById("total").innerHTML = `<h3>Total Price =  $${grandTotal.toFixed(2)}</h3>`;
 
 

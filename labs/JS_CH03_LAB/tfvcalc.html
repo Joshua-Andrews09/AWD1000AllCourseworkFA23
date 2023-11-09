@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Future Value Calculator</title>
+</head>
+<body>
+    <header><h1> The Future Value Calculator</h1></header>
+
+    <script>
+
+let investment = 0; 
+do{
+    investment = parseFloat(
+    prompt("Enter investment amount as xxxxx.xx", 10000));
+}
+
+while (isNaN(investment));
+
+let rate = 0; 
+do{
+    rate = parseFloat(prompt("Enter instrest rate as xx.x", 7.5));
+}
+
+while (isNaN(rate));
+
+let years = 0; 
+do{
+    years = parseInt(prompt("Enter number of years", 10)); 
+}
+
+while (isNaN(years));
+
+let futureValue = investment; 
+for (let i =1; i <=years; i++){
+    futureValue += futureValue * rate / 100;
+}
+
+        document.write(`<p><labe>Investment amount:<label> ${investment}</p>`);
+        document.write(`<p><labe>Intrest rate:<label> ${rate}</p>`);
+        document.write(`<p><labe>Years:<label> ${years}</p>`);
+        document.write(`<p><labe>Future Value:<label> ${futureValue.toFixed(2)}</p>`);
+
+   
+    </script>
+
+<h1></h1>
+</body>
+</html>

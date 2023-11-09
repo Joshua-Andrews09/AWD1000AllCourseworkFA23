@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="practice.css">
+    <title>practice</title>
+</head>
+<body>
+    <header>practice</header>
+    <main>
+
+        <div class="parent">
+            <p>This is a paragraph inside the parent div.</p>
+        </div>
+        
+        <ul>
+            <li class="red">Item 1</li>
+            <li class="blue">Item 2</li>
+            <li class="red">Item 3</li>
+            <li class="green">Item 4</li>
+        </ul>
+        
+        <div class="parent">
+            <p>This is a direct child paragraph.</p>
+            <div>
+                <p>This is not a direct child paragraph.</p>
+            </div>
+        </div>
+        
+
+    </main>
+    <footer>
+        
+    </footer>
+</body>
+</html>
+
+
+<!--all css -->
+.parent p {
+    color: blue;
+}
+
+.red, .blue {
+    font-weight: bold;
+    color: #F00;
+}
+
+.green, li.blue {
+    font-style: italic;
+    color: #008000;
+}
+
+.parent > p {
+    color: blue;
+}
+

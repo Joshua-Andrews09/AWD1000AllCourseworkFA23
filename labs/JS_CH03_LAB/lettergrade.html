@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Letter Grades</title>
+</head>
+<body>
+    <header><h1>Letter Grade</h1></header>
+
+
+
+
+    <script>
+
+
+function getLetterGrade(grade) {
+  if (grade >= 88 && grade <= 100) {
+    return 'A';
+  } else if (grade >= 80 && grade <= 87) {
+    return 'B';
+  } else if (grade >= 68 && grade <= 79) {
+    return 'C';
+  } else if (grade >= 60 && grade <= 67) {
+    return 'D';
+  } else if (grade < 60) {
+    return 'F';
+  } else {
+    return 'Invalid';
+  }
+}
+
+
+function collectGrades() {
+  var grades = [];
+  while (true) {
+    var input = prompt("Enter a number grade (0-100):\n Enter 999 to see grades:");
+    var grade = parseFloat(input);
+
+    if (grade === 999) {
+      break; 
+    } else if (isNaN(grade) || grade < 0 || grade > 100) {
+      alert("Invalid input. Please enter a valid number grade (0-100):\n Enter to see 999 to see grade: ");
+    } else {
+      var letterGrade = getLetterGrade(grade);
+      grades.push({ number: grade, letter: letterGrade });
+    }
+  }
+
+  var resultString = "Number Grades and Their Letter Equivalents:\n";
+  for (var i = 0; i < grades.length; i++) {
+    resultString += grades[i].number + " -> " + grades[i].letter + "\n";
+  }
+
+  alert(resultString);
+}
+
+collectGrades();
+
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculate Shipping and Handling</title>
+    <script type="text/javascript">
+        function calculateShippingAndHandling() {
+          
+            var purchasePrice = parseFloat(document.getElementById('purchasePrice').value);
+
+            var minimumFee = 1.50;
+
+     
+            if (purchasePrice <= 25.00) {
+                var shippingAndHandling = minimumFee;
+            } else {
+               
+                var percentage = 10;
+                var shippingAndHandling = (purchasePrice * percentage) / 100;
+            }
+
+            var totalCost = purchasePrice + shippingAndHandling;
+
+        
+            alert("Purchase Price: $" + purchasePrice.toFixed(2) + "\nShipping and Handling: $" + shippingAndHandling.toFixed(2) + "\nTotal Cost: $" + totalCost.toFixed(2));
+        }
+    </script>
+</head>
+<body>
+    <h1>Calculate Shipping and Handling</h1>
+    <label for="purchasePrice">Enter Purchase Price: $</label>
+    <input type="text" id="purchasePrice" />
+    <button onclick="calculateShippingAndHandling()">Calculate</button>
+</body>
+</html>

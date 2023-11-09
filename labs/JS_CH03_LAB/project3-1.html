@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculate Average</title>
+</head>
+<body>
+    <h1>Calculate Average Age of the 5 Brothers</h1>
+
+    <input type="text" id="brother1" value="0"><br>
+    <input type="text" id="brother2" value="0"><br>
+    <input type="text" id="brother3" value="0"><br>
+    <input type="text" id="brother4" value="0"><br>
+    <input type="text" id="brother5" value="0"><br>
+
+    <button onclick="calculateAverage()">Calculate Average</button>
+
+    <p id="result">Average: </p>
+
+    <script>
+        function calculateAverage() {
+         
+            var num1 = parseFloat(document.getElementById("brother1").value);
+            var num2 = parseFloat(document.getElementById("brother2").value);
+            var num3 = parseFloat(document.getElementById("brother3").value);
+            var num4 = parseFloat(document.getElementById("brother4").value);
+            var num5 = parseFloat(document.getElementById("brother5").value);
+
+            // Calculate the average
+            var average = (num1 + num2 + num3 + num4 + num5) / 5;
+
+    
+            document.getElementById("result").textContent = "Average: " + average;
+        }
+    </script>
+</body>
+</html>

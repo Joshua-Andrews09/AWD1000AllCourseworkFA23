@@ -1,0 +1,36 @@
+.parent p {
+    color: blue;
+}
+
+.red, .blue {
+    font-weight: bold;
+    color: #F00;
+}
+
+.green, li.blue {
+    font-style: italic;
+    color: #008000;
+}
+
+.parent > p {
+    color: blue;
+}
+
+
+.parent p {
+    color: blue;
+}
+
+.red, .blue {
+    font-weight: bold;
+    color: #F00;
+}
+
+.green, li.blue {
+    font-style: italic;
+    color: #008000;
+}
+
+.parent > p {
+    color: blue;
+}

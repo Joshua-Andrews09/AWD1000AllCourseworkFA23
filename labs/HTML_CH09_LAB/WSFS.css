@@ -98,7 +98,7 @@ align-items: center;
 
  .navbar-item:hover > .navbar-menu
  .navbar-item:hover > .navbar-menu
- .navbar-item: focus-written > .navbar-menu,
+ .navbar-item focus-written > .navbar-menu,
  .navbar-link:focus ~ .navbar-menu{
     display:flex;
  }

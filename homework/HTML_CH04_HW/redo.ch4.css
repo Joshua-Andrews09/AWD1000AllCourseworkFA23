@@ -1,0 +1,54 @@
+/* Relative Measurement (em or %) */
+ul li {
+    font-size: 1.2em;
+}
+
+/* Absolute Measurement (px or pt) */
+ul li {
+    padding: 10px;
+}
+
+/* Hex Color Value */
+#hex-color {
+    background-color: #3498db;
+}
+
+/* RGB Color Value */
+#rgb-color {
+    background-color: rgb(52, 152, 219);
+}
+
+/* RGBA Color Value */
+#rgba-color {
+    background-color: rgba(52, 152, 219, 0.5);
+}
+
+/* Descendant Selector */
+.descendant-selector {
+    font-weight: bold;
+}
+
+/* Multiple Selectors */
+.link-selector, #multiple-selectors {
+    color: #e74c3c;
+}
+
+/* Child Selector */
+.child-selector {
+    text-decoration: underline;
+}
+
+/* Pseudo-class Selector */
+.link-selector:hover, .link-selector:focus {
+    color: #2ecc71;
+}
+
+/* Shorthand Font Property */
+body {
+    font: italic bold 18px/1.5 Arial, sans-serif;
+}
+
+/* Text Shadow */
+h2 {
+    text-shadow: 2px 2px 5px #333;
+}

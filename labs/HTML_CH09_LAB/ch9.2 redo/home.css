@@ -1,0 +1,96 @@
+
+header{
+    background-color: black;
+    color: white;}
+
+    img{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+    h1{
+        text-align: center;
+    }
+ #links{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+ }
+
+#content{
+    display: flex;
+    flex-direction: row;
+}
+#main{
+    width: 70%;
+    border: 2px;
+    border-style: solid;
+    border-color: navy;
+    padding: 5px;
+    margin: 10px;
+    flex-grow: 1;
+}
+
+#aside{
+    border: 2px;
+    border-style: solid;
+    border-color: navy;
+    padding:5px;
+    margin: 10px;
+    align-content: center;
+width: 30%;
+}
+
+#facts{
+    border: 2px;
+    border-style: solid;
+    border-color: navy;
+    padding: 5px;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 10px;
+}
+#products{
+    border: 2px;
+    border-style: solid;
+    border-color: navy;
+    padding: 5px;
+    margin: 10px;
+    gap: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#airpods{
+align-content: center;
+text-align: center;
+}
+
+#mac{
+    align-content: center;
+    text-align: center;
+}
+
+footer{
+    text-align: center;
+    background-color: black;
+    color: white;
+
+}
+
+body{
+    height: 100vh;
+}
+
+@media screen and (max-width: 600px) {
+    #links {
+        display: flex;
+        flex-direction: column;
+      width: 50%;
+
+    }
+  }
+  

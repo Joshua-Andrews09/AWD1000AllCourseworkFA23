@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ch3.css">
+    <title>Project 3-3</title>
+</head>
+<body>
+    <div class="border">
+  <header><h1>BMI Calculator</h1></header>  
+<div class="calculator">
+  <label for="weight" ><h4>Weight:</h4></label> <input id="weight" class="weight" type="text" placeholder=" Body Weight"></input>
+  <label for="height" ><h4>Height:</h4></label> <input id="height" class="height" type="text" placeholder="height"></input><br>
+
+
+  <button onclick="calcBMI()">Calculate BMI</button>
+
+  <label for="bmiResult"><h4>BMI Calculations</h4></label><input type="text" id="bmiResult" readonly>
+</div>
+    </div>
+  
+
+<Script>
+
+  
+ 
+        function calcBMI() {
+            var weight = parseFloat(document.getElementById('weight').value);
+            var height = parseFloat(document.getElementById('height').value);
+            
+            if (!isNaN(weight) && !isNaN(height)) {
+                var bmi = (weight * 703) / (height * height);
+                document.getElementById('bmiResult').value = bmi.toFixed(2);
+            } else {
+                document.getElementById('bmiResult').value = "Invalid input. Please enter valid weight and height.";
+            }
+        }
+
+
+</Script>
+
+
+
+</body>
+</html>
