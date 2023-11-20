@@ -1,50 +1,65 @@
-/* Base styles for mobile */
-body {
+
+/* ... previous CSS code remains unchanged ... */
+
+.product-grid {
+    margin-left:  30%;
+    margin-right: 30%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+   
+    padding: 10px;
+  }
+  
+  .product-card {
+    border: 1px solid #ccc;
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .product-card img {
+    width: 100%;
+    max-width: 150px;
+    margin-bottom: 10px;
+  }
+  
+  .product-card h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  .product-card p {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .product-card button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .product-card button:hover {
+    background-color: #555;
+  }
+  
+  #column-1{
+    flex-direction: row;
+  }
+
+  #column-2{
+    flex-direction: row;
+  }
+
+  aside{ 
+
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
-}
 
-header {
+  }
+#content{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
-
-nav {
-    display: flex;
-    flex-direction: column;
-}
-
-/* Media query for tablet portrait (600px) */
-@media (min-width: 600px) {
-    header {
-        flex-direction: row;
-    }
-    nav {
-        flex-direction: row;
-    }
-    aside {
-        order: -1;
-    }
-    main {
-        flex-direction: row;
-    }
-}
-
-/* Media query for tablet landscape (900px) */
-@media (min-width: 900px) {
-    /* Add styles for tablet landscape layout here */
-}
-
-/* Media query for desktop (1200px) */
-@media (min-width: 1200px) {
-    /* Add styles for desktop layout here */
-}
-
-/* Media query for big desktop (2500px) */
-@media (min-width: 2500px) {
-    /* Add styles for big desktop layout here */
-}
-
-
-

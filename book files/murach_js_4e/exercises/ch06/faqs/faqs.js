@@ -5,7 +5,9 @@ const toggle = evt => {
     const h2Element = evt.currentTarget;                 // get the clicked h2 element
     const divElement = h2Element.nextElementSibling;     // get h2's sibling div
 
-    h2Element.classList.toggle("minus");
+    h2Element.classList.toggle("minus") .replaceWith(
+      aElement  
+    );
     divElement.classList.toggle("open");
 
     evt.preventDefault();   // cancel default action of h2 tag's <a> tag
