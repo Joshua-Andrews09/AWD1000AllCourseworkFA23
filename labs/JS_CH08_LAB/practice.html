@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="practice.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <title>practice hw</title>
+</head>
+<body>
+    
+    <div class="topic">
+        <div class="first-part">
+         <p>Soccer is the bestsp sport</p>
+        </div>
+        <div class="remainder">
+        <p>Soccer is considered the best sport around the whole world. Every man women and child can pick up a ball and start to play.</p>
+        </div>
+        <a href="#" class="expand-link">show less</a>
+    </div>
+    <div class="topic">
+        <div class="first-part">
+         <p>Soccer is the bestsp sport</p>
+        </div>
+        <div class="remainder">
+        <p>Soccer is considered the best sport around the whole world. Every man women and child can pick up a ball and start to play.</p>
+        </div>
+        <a href="#" class="expand-link">show less</a>
+    </div>
+    <div class="topic">
+        <div class="first-part">
+         <p>Soccer is the bestsp sport</p>
+        </div>
+        <div class="remainder">
+        <p>Soccer is considered the best sport around the whole world. Every man women and child can pick up a ball and start to play.</p>
+        </div>
+        <a href="#" class="expand-link">show less</a>
+    </div>
+    <script>
+        $(() => {
+    $('.expand-link').on('click', function(event) {
+        event.preventDefault(); // Prevent the default link behavior
+
+        const $topic = $(this).closest('.topic'); // Find the parent topic div
+        const $remainder = $topic.find('.remainder'); // Find the remainder text
+
+        if ($topic.hasClass('collapsed')) {
+            $topic.removeClass('collapsed'); // Expand the text
+            $(this).text('Show More'); // Update link text to show option to collapse
+        } else {
+            $topic.addClass('collapsed'); // Collapse the text
+            $(this).text('Show Less'); // Update link text to show option to expand
+        }
+        $remainder.slideToggle(); // Toggle the visibility of the remainder text
+    });
+});
+
+    </script>
+  
+</body>
+</html>

@@ -4,7 +4,7 @@ const $ = selector => document.querySelector(selector);
     
 const imageCache = [];
 let imageCounter = 0;
-let timer = null;
+let timer = 2000;
 let image = null;
 
 const mainImage = $("#main_image");   // the img element for the show
@@ -18,7 +18,7 @@ const runSlideShow = function() {
     caption.textContent = image.alt;
 };
          
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", ()=> {
     const links = $("#image_list").querySelectorAll("a");
     
     // process image links
@@ -34,9 +34,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // attach start and pause event handlers
     $("#start").addEventListener("click", () => {
+        timer = setInterval(runSlideShow, 2000);
+        $("#start").disabled = true;
+        $("#pause").disabled = false;
+       
 
     });
     $("#pause").addEventListener("click", () => {
+        
+        $("#start").disabled = false; 
+        $("#pause").disabled = true;
 
+        clearInterval(timer);
+
+        
     });
 });

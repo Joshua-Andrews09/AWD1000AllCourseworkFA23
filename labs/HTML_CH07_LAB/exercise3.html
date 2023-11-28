@@ -1,3 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Image Rollover</title>
+    <link rel="stylesheet" type="text/css" href="exercise3.css">
+
+</head>
+
+<body>
+    <main>
+        <h1>Fishing Images</h1>
+        <p>Move your mouse over an image to change it and back out of the
+            image to restore the original image.</p>
+        <ul id="image_list">
+            <li><a href="release.jpg" title="Catch and Release"></a></li>
+            <li><a href="deer.jpg" title="Deer at Play"></a></li>
+            <li><a href="hero.jpg" title="The Big One!"></a></li>
+            <li><a href="bison.jpg" title="Grazing Bison"></a></li>
+        </ul>
+        <p>
+            <img id="image1" src="release.jpg" alt="">
+            <img id="image2" src="bison.jpg" alt="">
+        </p>
+    </main>
+
+
+    <script>
+
 "use strict";
 
 const $ = selector => document.querySelector(selector);
@@ -5,6 +35,7 @@ const $ = selector => document.querySelector(selector);
 document.addEventListener("DOMContentLoaded", () => {
     var image1 = $("#image1");
     var image2 = $("#image2");
+    let timer = 2000
 let image = null;
     // preload images
     var links = $("#image_list").querySelectorAll("a");
@@ -40,3 +71,10 @@ image.alt = link.title;
     }
 
 });
+
+
+
+
+    </script>
+</body>
+</html>
